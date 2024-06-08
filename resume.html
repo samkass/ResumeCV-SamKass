@@ -30,21 +30,32 @@ div.resume_footer p {
   text-align: center;
 }
 div.name {
-  padding-left: 8.5em;
-  font-size: 2em;
+  text-align: center;
+  font-size: 2.5em;
   font-weight: 450;
+  margin-bottom: 0.1em;
+}
+div.address, div.email, div.linkedinlink {
+  font-size: 0.9em;
+  font-weight: 450;
+  margin-bottom: 0.05em;
 }
 div.address {
-  padding-left: 10em;
-  font-size: 0.8em;
-  font-weight: 450;
+  padding-left: 5em;
+  width: 50%;
+}
+div.email, div.linkedinlink {
+  display: inline-block;
+  vertical-align: top;
 }
 div.email {
-  padding-left: 10em;
-  font-size: 0.8em;
-  font-weight: 450;
-  float: left;
-  width: 18em;
+  padding-left: 5em;
+  width: 35%;
+}
+div.linkedinlink {
+  width: 40%;
+  text-align: left;
+  padding-left: 1em;
 }
 div.phone {
   font-size: 0.8em;
@@ -126,15 +137,23 @@ div.edu_desc {
 div.references {
   font-style: italic;
 }
+
+@media screen and (max-width: 600px) {
+  div.email, div.linkedinlink {
+    display: block;
+    width: 100%;
+    padding-left: 2em;
+  }
+}
 </style>
 </head>
 <body>
 <div class="outer">
 <div class="resume_head">
 <div class="name">Sam Kass</div>
-<div class="address">Location: Z&#252;rich Region, Switzerland (C Permit)</Div>
-<div class="email">E-mail: <a href="mailto:samkass@samkass.com">samkass@samkass.com</a></div>
-<div class="phone">LinkedIn: <a href="https://www.linkedin.com/in/sakass">https://www.linkedin.com/in/sakass</a></div>
+<div class="address">Location:&nbsp;Z&#252;rich Region, Switzerland (C Permit)</Div>
+<div class="email">E-mail:&nbsp;<a href="mailto:samkass@samkass.com">samkass@samkass.com</a></div>
+<div class="linkedinlink">LinkedIn:&nbsp;<a href="https://www.linkedin.com/in/sakass">https://www.linkedin.com/in/sakass</a></div>
 </div>
 <h2>Professional Summary</h2>
 <div class="body_region">
@@ -159,9 +178,9 @@ Present
 <div class="pos_desc">
 <h4 class="title_text">Key Achievements</h4>
 <ul class="pos_accomplish">
-<li>Led team delivering new cross-border Demographics service which could deliver better, more insightful data an order of magnitude faster using a Graph database. Hired near-shore team, architected solution, set up CI/CD plan, reviewed code, defined stories, and performed agile ceremonies. (Patent pending.)</li>
+<li>Led team delivering new cross-border Demographics service which delivered secure data orders of magnitude faster using a Graph database. Hired near-shore team, architected solution, set up CI/CD plan, reviewed code, defined stories, and performed agile ceremonies. (Patent pending.)</li>
 <li>Led team which brought a global real-time message bus (Kafka) to Citi for fast intra-day data transfer. Negotiated with vendor alongside acquisition team, architected solution, reviewed code, and resolved global security review issues.</li>
-<li>Established initial architecture review process for Citi Private Bank. As lead Citi Private Bank architect during a transition phase, established the initial architect review process to ensure consistent application of principles in a diverse tech landscape.</li>
+<li>As lead Architect for Citi Private Bank during its transition to Wealth, established Architecture Review Board, and have remained a Data Systems Architect in the new organization, improving Citi's data systems quality, reliability, and scale.</li>
 <li>Mentored senior engineers, evaluated projects, and spoke at sessions as faculty for the Engineering Excellence "E4" technology program to show our best technologists how they can have firm-wide impact outside their immediate team.</li>
 </ul>
 </div>
@@ -181,7 +200,7 @@ Present
 <li>Founded company in 2024 to bring AI/LLM to help people's personal lives, initially focusing on the expat/immigrant communities.</li>
 <li>Delivered iOS app which uses a mobile camera to scan postal mail, read it in any of 30 languages, and give a concise summary in 50+ languages. (Patent pending.)</li>
 <li>Built Google Cloud Run-based back-end on node.js which implements model decisions, prompting, guardrails, and monitoring.</li>
-<li>Implemented streamlined CI/CD pipeline with automated testing to enable me to scale with minimal effort.</li>
+<li>Implemented streamlined CI/CD pipeline with automated testing to enable me to scale as a startup.</li>
 </ul>
 </div>
 <div class="pos_title">
@@ -199,7 +218,7 @@ September 2018
 <ul class="pos_accomplish">
 <li>Redefined client risk evaluation with new web application which brings statistical modeling to user-friendly data acquisition, enabling fast and accurate risk evaluation.</li>
 <li>Led effort to apply big data analysis and AI to more than double Negative News Screening staff productivity; worked with near-short AI vendors to process news articles and evaluate potential risk.</li>
-<li>Increased release cadence from occasional weekend releases to weekly Thursday releases through TDD, CI/CD automation, and service architecture.</li>
+<li>Increased release cadence from monthly weekend releases to weekly Thursday releases through TDD, CI/CD automation, and service architecture.</li>
 </ul>
 </div>
 <div class="pos_title">
@@ -255,7 +274,6 @@ August 2004
 <li>Scaled custom manufacturing/design applications by two orders of magnitude, from startup to large-scale rollout</li>
 <li>Automated several manufacturing software systems to transform manual steps into distributed event-driven compute grid, enabling orders of magnitude of scale.</li>
 <li>Led rewrite of client-facing 3D internet plugin to dramatically simplify the product, bringing it to less-trained General Practitioners and multiplying the addressable market.</li>
-<li>Co-inventor of manufacturing patents #6,976,627 and #8,260,591.</li>
 </ul>
 </div>
 <div class="pos_title">
